@@ -243,7 +243,7 @@ declare module 'kayn' {
             numberOfRetriesBeforeAbort?: number
             delayBeforeRetry?: number
             burst?: boolean
-            exitOnRateLimitExceed?: boolean
+            shouldExitOnForbiddenKey?: boolean
         }
         cacheOptions?: {
             cache: any

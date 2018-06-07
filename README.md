@@ -135,7 +135,7 @@ const kayn = Kayn('RGAPI-my-api-key')(/*{
         numberOfRetriesBeforeAbort: 3,
         delayBeforeRetry: 1000,
         burst: false,
-        exitOnRateLimitExceed: false,
+        shouldExitOnForbiddenKey: false,
     },
     cacheOptions: {
         cache: null,
@@ -267,7 +267,7 @@ Disabled by default in favor of `spread`.
 
 `false` => `riotratelimiter` will use its spread strategy.
 
-### exitOnRateLimitExceed
+### shouldExitOnForbiddenKey
 
 Default: false.
 
